@@ -1,0 +1,7 @@
+                        tmpOBJ = Instantiate(testOBJ, image.GetCenterPose().position, image.GetCenterPose().rotation);
+                        tmpOBJ.transform.position = new Vector3(tmpOBJ.transform.position.x, tmpOBJ.transform.position.y - 0.05f, tmpOBJ.transform.position.z);
+                        tmpOBJ.transform.Rotate(tmpOBJ.transform.rotation.x + 60, tmpOBJ.transform.rotation.y, tmpOBJ.transform.rotation.z);
+                        tmpOBJ.transform.eulerAngles = new Vector3(tmpOBJ.transform.eulerAngles.x, tmpOBJ.transform.eulerAngles.y + 180, tmpOBJ.transform.eulerAngles.z);
+                        tmpOBJ.transform.localScale = new Vector3(tmpOBJ.transform.localScale.x * 0.05f, tmpOBJ.transform.localScale.y * 0.05f,
+                            tmpOBJ.transform.localScale.z * 0.05f);
+                        tmpOBJ.SetActive(true);

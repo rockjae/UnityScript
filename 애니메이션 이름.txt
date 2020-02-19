@@ -1,0 +1,1 @@
+this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("idle")
